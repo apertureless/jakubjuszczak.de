@@ -1,0 +1,15 @@
+
+
+.page-enter-active, .page-leave-active
+{
+  transition: opacity .5s
+}
+.page-enter, .page-leave-active
+{
+  opacity: 0
+}
+
+h1, h2, h3 {
+  font-family: $heading-font-family;
+  font-weight: 600;
+}

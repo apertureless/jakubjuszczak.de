@@ -1,0 +1,11 @@
+@mixin container($width: $base-container-width) {
+  max-width: rem($width);
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+@mixin image-shadow() {
+  box-shadow: 0 0 6rem rgba(43,43,43,.55)
+}

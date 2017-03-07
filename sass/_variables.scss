@@ -1,0 +1,48 @@
+$medium-screen: 600px;
+$large-screen: 900px;
+// Typography
+$base-font-family: 'NanamiPro', Arial, sans-serif;
+$heading-font-family: $base-font-family;
+// Font Sizes
+$base-font-size: 1em;
+// Line height
+$base-line-height: 1.5;
+$heading-line-height: 1.2;
+// Other Sizes
+$base-border-radius: 3px;
+$base-spacing: $base-line-height * 1em;
+$small-spacing: $base-spacing / 2;
+$base-z-index: 0;
+// Colors
+$blue: #2971EE;
+$lila: #544EBF;
+$yellow: #FBC227;
+$black: #2A2A2A;
+$green-light: #3EC446;
+$green-dark: #42CDB2;
+$okker: #FBFAF6;
+$reddish: #FF6D56;
+$white: #fff;
+
+$primary-color: $black;
+
+$background-primary: #fff;
+$background-secondary: $okker;
+// Font Colors
+$base-font-color: $primary-color;
+$action-color: $primary-color;
+// Border
+$base-border-color: $okker;
+$base-border: 1px solid $base-border-color;
+$spacer: 25px;
+// Background Colors
+$base-background-color: $white;
+$secondary-background-color: tint($base-border-color, 75%);
+// Forms
+$form-box-shadow: inset 0 1px 3px rgba(#000, 0.06);
+$form-box-shadow-focus: $form-box-shadow, 0 0 5px adjust-color($action-color, $lightness: -5%, $alpha: -0.3);
+// Animations
+$base-duration: 150ms;
+$base-timing: ease;
+// Grid settings
+$base-container-width: 780px;
