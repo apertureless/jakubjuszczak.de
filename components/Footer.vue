@@ -24,7 +24,7 @@
       </li>
     </ul>
     <div class="Links">
-      <nuxt-link to="/impressum">Impressum</nuxt-link>
+      <nuxt-link to="/imprint">Imprint</nuxt-link>
     </div>
   </footer>
 </template>

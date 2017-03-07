@@ -31,6 +31,11 @@
   export default {
     components: {
       TextBlock
+    },
+    head () {
+      return {
+        title: 'Imprint'
+      }
     }
   }
 </script>

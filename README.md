@@ -1,6 +1,8 @@
-# jakubjuszczak
+# jakubjuszczak.de
 
-> Business Site
+> Freelance Site
+
+Basic site build with nuxt.js
 
 ## Build Setup
 

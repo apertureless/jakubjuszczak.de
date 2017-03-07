@@ -12,7 +12,7 @@
     },
     head () {
       return {
-        title: 'Contact Me! ☕'
+        title: 'Work & Skills'
       }
     }
   }
