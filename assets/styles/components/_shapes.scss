@@ -1,0 +1,39 @@
+.Shape {
+  position: absolute;
+
+  @include variant('red') {
+    fill: $reddish;
+  }
+
+  @include variant('blue') {
+    fill: $blue;
+  }
+
+  @include variant('yellow') {
+    fill: $yellow;
+  }
+
+  @include variant('green') {
+    fill: $green-dark;
+  }
+
+  @include variant('top-left') {
+    top: rem(-40);
+    left: rem(-40);
+  }
+
+  @include variant('top-right') {
+    top: rem(-40);
+    right: rem(-40);
+  }
+
+  @include variant('bottom-left') {
+    bottom: rem(-40);
+    left: rem(-40);
+  }
+
+  @include variant('bottom-right') {
+    bottom: rem(-40);
+    right: rem(-40);
+  }
+}

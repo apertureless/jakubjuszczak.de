@@ -1,13 +1,15 @@
 module.exports = {
+  cache: true,
   /*
   ** Headers of the page
   */
   head: {
     title: 'Jakub Juszczak 🦄 Frontend Developer from Bochum',
+    titleTemplate: '%s - Web Development',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Nuxt.js project' }
+      { hid: 'description', name: 'description', content: 'Jakub Juszczak Frontend Developer with passion.' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
@@ -16,11 +18,14 @@ module.exports = {
   /*
   ** Global CSS
   */
-  css: ['~assets/css/main.css'],
+  css: [
+    '~assets/css/main.css',
+    { src: '~assets/styles/_base.scss', lang: 'scss' }
+    ],
   /*
   ** Customize the progress-bar color
   */
-  loading: { color: '#3B8070' },
+  loading: { color: '#FBC227' },
   /*
   ** Build configuration
   */

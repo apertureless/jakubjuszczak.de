@@ -18,9 +18,3 @@ export default {
 }
 </script>
 
-<style lang="scss">
-  @import "../sass/_base.scss";
-  .b {
-    margin-top: rem(77);
-  }
-</style>

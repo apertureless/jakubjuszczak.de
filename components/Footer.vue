@@ -7,7 +7,7 @@
         </a>
       </li>
       <li>
-        <a href="twitter" title="Twitter" target="_new" class="Social__icon">
+        <a href="https://www.twitter.com/apertureless" title="Twitter" target="_new" class="Social__icon">
           <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><circle id="a" cx="22" cy="22" r="22"/><mask id="b" width="44" height="44" x="0" y="0"><use xlink:href="#a"/></mask></defs><g fill="none"><path d="M0 0h44v44h-44z"/><use stroke="#000" stroke-width="4" mask="url(#b)" xlink:href="#a"/><path fill="#000" d="M30.526 16.846c.89-.562 1.573-1.452 1.893-2.513-.833.521-1.754.898-2.736 1.102-.784-.884-1.904-1.435-3.144-1.435-2.379 0-4.307 2.035-4.307 4.544 0 .356.036.703.11 1.035-3.58-.19-6.753-1.997-8.88-4.748-.371.673-.583 1.453-.583 2.285 0 1.576.761 2.967 1.917 3.783-.706-.023-1.371-.23-1.952-.568v.056c0 2.202 1.484 4.039 3.457 4.455-.362.107-.742.16-1.136.16-.277 0-.549-.027-.81-.081.547 1.804 2.139 3.12 4.024 3.155-1.475 1.219-3.333 1.945-5.351 1.945-.348 0-.691-.02-1.028-.062 1.907 1.288 4.171 2.041 6.604 2.041 7.926 0 12.257-6.924 12.257-12.929l-.011-.588c.842-.641 1.574-1.442 2.15-2.353-.773.361-1.604.606-2.474.715z"/></g></svg>
         </a>
       </li>
@@ -28,47 +28,3 @@
     </div>
   </footer>
 </template>
-
-<style lang="scss">
-  @import "../sass/_base.scss";
-
-  footer {
-    background: $yellow;
-    color: $base-font-color;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: rem(20);
-  }
-
-  .Social {
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-    margin: 0;
-    width: 100%;
-    justify-content: center;
-
-    li {
-      flex: 0;
-      padding: 0 rem(20);
-    }
-
-    @include has(icon) {
-      opacity: 0.4;
-      display: block;
-      &:hover {
-        opacity: 0.9;
-      }
-    }
-  }
-
-  .Links {
-    padding-top: rem(20);
-    a {
-      text-decoration: none;
-      color: $reddish;
-    }
-  }
-</style>
