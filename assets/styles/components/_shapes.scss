@@ -1,5 +1,10 @@
 .Shape {
   position: absolute;
+  display: none;
+
+  @include media($sm-up) {
+    display: inline-block;
+  }
 
   @include variant('red') {
     fill: $reddish;
@@ -13,13 +18,25 @@
     fill: $yellow;
   }
 
+  @include variant('lila') {
+    fill: $lila;
+  }
+
   @include variant('green') {
     fill: $green-dark;
   }
 
+  @include variant('green-light') {
+    fill: $green-light;
+  }
+
   @include variant('top-left') {
-    top: rem(-40);
-    left: rem(-40);
+    top: rem(-20);
+    left: rem(-20);
+    @include media($sm-up) {
+      top: rem(-40);
+      left: rem(-40);
+    }
   }
 
   @include variant('top-right') {

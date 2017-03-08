@@ -1,43 +1,60 @@
- .Hero {
-    background: $background-secondary;
+.Hero {
+  background: $background-secondary;
 
-    @include has(container) {
-      @include container();
-      padding: rem(150) 0;
-    }
+  @include has(container) {
+    @include container();
+    padding: rem(150) 0;
   }
+}
 
-  .Person {
-    display: flex;
+.Person {
+  display: flex;
+  flex-direction: column;
+
+  @include media($sm-up) {
     flex-direction: row;
     justify-content: center;
     align-items: flex-end;
+  }
 
-    @include has(image) {
-      position: relative;
-      z-index: 2;
+  @include has(image) {
+    position: relative;
+    z-index: 2;
 
-      img {
-        @include image-shadow();
-      }
-    }
-
-    @include has(text) {
-      line-height: 1.2;
-    }
-
-    @include has(title) {
-      font-size: rem(80);
-      color: $green-light;
-      line-height: 0.9;
-      font-weight: 600;
-      text-transform: uppercase;
-    }
-
-    @include has(location) {
-      font-size: rem(20);
-      margin: 0;
-      font-family: $base-font-family;
-      font-weight: 200;
+    img {
+      @include image-shadow();
     }
   }
+
+  @include has(text) {
+    line-height: 1.2;
+  }
+
+  @include has(title) {
+    font-size: rem(30);
+    color: $green-light;
+    line-height: 0.9;
+    font-weight: 600;
+    text-transform: uppercase;
+
+    @include media($sm-up) {
+      font-size: rem(80);
+    }
+  }
+
+  @include has(location) {
+    font-size: rem(20);
+    margin: 0;
+    font-family: $base-font-family;
+    font-weight: 200;
+  }
+}
+
+.slide-enter-active, .slide-leave-active {
+  transition: all .5s
+}
+
+.slide-enter, .slide-leave-active {
+  opacity: 0;
+  transform: translate(30px, 0);
+}

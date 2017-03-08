@@ -5,17 +5,10 @@
 
 @import "typography.scss";
 @import "mixins.scss";
+@import "layout.scss";
 
 @import "components/hero-intro.scss";
 @import "components/footer.scss";
 @import "components/header.scss";
 @import "components/shapes.scss";
 @import "components/text-block.scss";
-
-[v-cloak] {
-  display: none;
-}
-
-.b {
-  margin-top: rem(77);
-}

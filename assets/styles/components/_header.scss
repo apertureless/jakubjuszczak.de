@@ -18,15 +18,23 @@
 
   @include has(item) {
     flex: 0;
-    padding: 0 rem(30);
+    padding: 0 rem(15);
+
+    @include media($sm-up) {
+      padding: 0 rem(30);
+    }
 
     a {
+      font-size: rem(16);
       margin: rem(25) 0;
-      font-size: rem(24);
       color: $blue;
       text-decoration: none;
       font-family: $base-font-family;
       font-weight: 200;
+
+      @include media($sm-up) {
+        font-size: rem(24);
+      }
 
       &:hover {
         color: $green-dark;

@@ -1,6 +1,10 @@
 <template>
   <div>
-    <hero-intro title="Jakub Juszczak"/>
+    <hero-intro title="Jakub Juszczak" location="💝 Bochum, DE">
+      <shape slot="before" position="top-left" type="rectangle" :index="-1" :speed-factor="0.25" orientation='x'/>
+      <img slot="image" src="~assets/img/profile.jpg" alt="Jakub Juszczak" ref="element" />
+      <shape slot="after" position="bottom-right" type="circle" :index="1" :speed-factor="0.25"/>
+    </hero-intro>
     <text-block>
       <p class="intro">
         Hi, <br/><br/>
@@ -16,11 +20,13 @@
 <script>
   import HeroIntro from '~components/HeroIntro.vue'
   import TextBlock from '~components/TextBlock.vue'
+  import Shape from '~components/Shape.vue'
 
   export default {
     components: {
       HeroIntro,
-      TextBlock
+      TextBlock,
+      Shape
     }
   }
 </script>

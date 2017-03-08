@@ -1,0 +1,23 @@
+[v-cloak] {
+  display: none;
+}
+
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.b {
+  @include media($sm-up) {
+    margin-top: rem(77);
+  }
+}
