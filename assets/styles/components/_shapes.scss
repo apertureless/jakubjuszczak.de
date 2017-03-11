@@ -1,6 +1,6 @@
 .Shape {
   position: absolute;
-  display: none;
+  /* display: none; */
 
   @include media($sm-up) {
     display: inline-block;

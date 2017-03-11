@@ -20,6 +20,7 @@
   @include has(image) {
     position: relative;
     z-index: 2;
+    margin: 0 auto;
 
     img {
       @include image-shadow();
@@ -28,13 +29,20 @@
 
   @include has(text) {
     line-height: 1.2;
+    text-align: center;
+    margin-bottom: rem(30);
+
+    @include media($sm-up) {
+      margin-bottom: 0;
+      text-align: left;
+    }
   }
 
   @include has(title) {
     font-size: rem(30);
     color: $green-light;
     line-height: 0.9;
-    font-weight: 600;
+    font-weight: 700;
     text-transform: uppercase;
 
     @include media($sm-up) {

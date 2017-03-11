@@ -5,7 +5,9 @@
        <person-title :title="title" :location="location" orientation='x'/>
         <div class="Person__image">
           <slot name="before"></slot>
-          <slot name="image"></slot>
+          <transition appear name="fromTop">
+            <slot name="image"></slot>
+          </transition>
           <slot name="after"></slot>
         </div>
       </div>

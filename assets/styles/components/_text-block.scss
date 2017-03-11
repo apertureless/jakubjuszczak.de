@@ -51,7 +51,7 @@
 
     &.intro {
       font-size: rem(20);
-      font-weight: 200;
+      font-weight: 600;
 
       @include media($sm-up) {
       font-size: rem(24);

@@ -1,8 +1,10 @@
 <template>
-  <div class="Person__text" ref="element">
-      <h1 class="Person__title" v-if="title">{{ title }}</h1>
-      <p class="Person__location" v-if="location">{{ location }}</p>
-  </div>
+  <transition appear name="fromLeft">
+    <div class="Person__text" ref="element">
+        <h1 class="Person__title" v-if="title">{{ title }}</h1>
+        <p class="Person__location" v-if="location">{{ location }}</p>
+    </div>
+  </transition>
 </template>
 
 <script>
