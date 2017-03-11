@@ -7,7 +7,7 @@
     </hero-intro>
     <text-block>
       <p class="intro">
-       So, you have an exiting project and looking for a <span class="highlight">motivated</span> and creative developer?
+       So, you have an exciting project and looking for a <span class="highlight">motivated</span> and creative developer?
       </p>
       <p>
         Simply write me an e-mail: <a class="red" href="mailto:juszczak.j@googlemail.com">juszczak.j@googlemail.com</a> and I get in touch with you as soon as possible! 🚀
