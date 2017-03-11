@@ -2,7 +2,7 @@
   <div>
     <hero-intro title="Jakub Juszczak" location="💝 Bochum, DE">
       <shape slot="before" position="top-left" color="red" type="rectangle" :index="-1" :speed-factor="0.25" orientation='x'/>
-      <img slot="image" src="~assets/img/profile.jpg" alt="Jakub Juszczak" ref="element" />
+      <img slot="image" src="~assets/img/profile.jpg" alt="Jakub Juszczak" class="will-animate" ref="element" />
       <shape slot="after" position="bottom-right" color="yellow" type="circle" :index="1" :speed-factor="0.25"/>
     </hero-intro>
     <text-block>
