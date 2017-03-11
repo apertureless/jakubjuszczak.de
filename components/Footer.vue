@@ -24,7 +24,7 @@
       </li>
     </ul>
     <div class="Links">
-      <nuxt-link to="/imprint">Imprint</nuxt-link>
+      <nuxt-link to="/legal">Privacy Policy</nuxt-link>
     </div>
   </footer>
 </template>
