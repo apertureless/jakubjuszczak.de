@@ -1,6 +1,6 @@
 <template>
-  <transition appear name="fromLeft">
-    <div class="Person__text" ref="element">
+  <transition appear :duration="1000" name="fromLeft" v-on:after-appear="setVisibleHook">
+    <div class="Person__text will-animate" ref="element" v-cloak>
         <h1 class="Person__title" v-if="title">{{ title }}</h1>
         <p class="Person__location" v-if="location">{{ location }}</p>
     </div>
@@ -18,6 +18,11 @@
       },
       location: {
         type: String
+      }
+    },
+    methods: {
+      setVisibleHook (el) {
+        el.style.opacity = 1
       }
     }
   }
