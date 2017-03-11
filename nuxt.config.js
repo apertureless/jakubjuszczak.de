@@ -1,5 +1,8 @@
 module.exports = {
   cache: true,
+  plugins: [
+    '~plugins/ga.js'
+  ],
   /*
   ** Headers of the page
   */
@@ -12,7 +15,8 @@ module.exports = {
       { hid: 'description', name: 'description', content: 'Jakub Juszczak Frontend Developer with passion.' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700'}
     ]
   },
   /*
