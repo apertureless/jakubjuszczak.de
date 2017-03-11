@@ -1,9 +1,9 @@
 <template>
   <div>
     <hero-intro title="💌 Get in Contact">
-      <shape slot="before" position="top-right" type="circle" :index="1" :speed-factor="0.25" orientation='x'/>
+      <shape slot="before" position="top-right" color="blue" type="circle" :index="1" :speed-factor="0.25" orientation='x'/>
       <img slot="image" src="~assets/img/profile2.jpg" alt="Jakub Juszczak" ref="element" />
-      <shape slot="after" position="bottom-left" type="doughnut" :index="-1" :speed-factor="0.25"/>
+      <shape slot="after" position="bottom-left" color="red" type="doughnut" :index="-1" :speed-factor="0.25"/>
     </hero-intro>
     <text-block>
       <p class="intro">

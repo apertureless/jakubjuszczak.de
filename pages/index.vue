@@ -1,9 +1,9 @@
 <template>
   <div>
     <hero-intro title="Jakub Juszczak" location="💝 Bochum, DE">
-      <shape slot="before" position="top-left" type="rectangle" :index="-1" :speed-factor="0.25" orientation='x'/>
+      <shape slot="before" position="top-left" color="red" type="rectangle" :index="-1" :speed-factor="0.25" orientation='x'/>
       <img slot="image" src="~assets/img/profile.jpg" alt="Jakub Juszczak" ref="element" />
-      <shape slot="after" position="bottom-right" type="circle" :index="1" :speed-factor="0.25"/>
+      <shape slot="after" position="bottom-right" color="yellow" type="circle" :index="1" :speed-factor="0.25"/>
     </hero-intro>
     <text-block>
       <p class="intro">
@@ -14,16 +14,19 @@
       <p>However I have also experience with laravel, microservices, <a href="https://github.com/apertureless/shopware-api-client" class="blue" title="Shopware API Client" target="_new">nodejs</a>, docker, agile development, testing, WebVR and many other topics.</p>
       <p>Feel free to contact me, if you are interested in working with me.</p>
     </text-block>
+    <twitter-card/>
   </div>
 </template>
 
 <script>
+  import TwitterCard from '~components/TwitterCard.vue'
   import HeroIntro from '~components/HeroIntro.vue'
   import TextBlock from '~components/TextBlock.vue'
   import Shape from '~components/Shape.vue'
 
   export default {
     components: {
+      TwitterCard,
       HeroIntro,
       TextBlock,
       Shape
