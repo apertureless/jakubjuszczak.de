@@ -26,5 +26,13 @@
     <div class="Links">
       <nuxt-link to="/legal">Privacy Policy</nuxt-link>
     </div>
+    <cookie-law theme="royal"></cookie-law>
   </footer>
 </template>
+
+<script>
+  import CookieLaw from './CookieLaw.vue'
+  export default {
+    components: {CookieLaw}
+  }
+</script>

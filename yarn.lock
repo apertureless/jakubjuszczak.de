@@ -4330,6 +4330,10 @@ vm-browserify@0.0.4:
   dependencies:
     indexof "0.0.1"
 
+vue-cookie-law@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/vue-cookie-law/-/vue-cookie-law-1.0.0.tgz#ea005925cca298f49801c68c689ef9e8909ac8b1"
+
 vue-hot-reload-api@^2.0.1:
   version "2.0.11"
   resolved "https://registry.yarnpkg.com/vue-hot-reload-api/-/vue-hot-reload-api-2.0.11.tgz#bf26374fb73366ce03f799e65ef5dfd0e28a1568"
