@@ -1,7 +1,8 @@
 module.exports = {
   cache: true,
   plugins: [
-    '~plugins/ga.js'
+    '~plugins/ga.js',
+    '~plugins/registerSw.js'
   ],
   /*
   ** Headers of the page
