@@ -1,5 +1,5 @@
 
-const staticCacheName = 'jakub-static-v1'
+const staticCacheName = 'jakub-static-v2'
 
 self.addEventListener('install', event => {
   event.waitUntil(
