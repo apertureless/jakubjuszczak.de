@@ -1,5 +1,5 @@
 
-const staticCacheName = 'jakub-static-v2'
+const staticCacheName = 'jakub-static-v3'
 
 self.addEventListener('install', event => {
   event.waitUntil(
@@ -9,7 +9,13 @@ self.addEventListener('install', event => {
         '_nuxt/style.css',
         '_nuxt/vendor.bundle.js',
         '_nuxt/server-bundle.js',
-        '_nuxt/nuxt.bundle.js'
+        '_nuxt/nuxt.bundle.js',
+        '_nuxt/0.nuxt.bundle.js',
+        '_nuxt/1.nuxt.bundle.js',
+        '_nuxt/2.nuxt.bundle.js',
+        '_nuxt/3.nuxt.bundle.js',
+        '_nuxt/4.nuxt.bundle.js',
+        'https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700'
       ])
     })
   )
