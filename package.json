@@ -8,7 +8,7 @@
     "@nextindex/next-scss": "^1.0.7",
     "node-sass": "^4.5.1",
     "normalize.css": "^6.0.0",
-    "nuxt": "^0.10.5",
+    "nuxt": "0.9.9",
     "sass-loader": "^6.0.3",
     "vue-cookie-law": "^1.0.2"
   },
