@@ -8,15 +8,19 @@
   justify-content: space-between;
   align-items: baseline;
   flex-flow: row wrap;
-
-  > * {
-    flex: 1;
-  }
+  font-family: $base-font-family;
 
   @include media($sm-up) {
     flex-direction: row;
-    > * {
+  }
+
+  > * {
+    flex: 1 1 100%;
+    margin-bottom: rem(15);
+
+    @include media($sm-up) {
       flex: none;
+      margin: 0;
     }
   }
 }
@@ -35,6 +39,7 @@
 
 .Cookie__button {
   cursor: pointer;
+  text-align: center;
 }
 
 @mixin generateTheme($theme, $backgroundColor, $fontColor, $buttonBackgroundColor, $buttonFontColor: #fff, $buttonRadius: 0) {
@@ -56,14 +61,8 @@
   }
 }
 
-@include generateTheme('base', #F1F1F1, #232323, #97D058);
-@include generateTheme('base--rounded', #F1F1F1, #232323, #97D058, #fff, 20px);
-@include generateTheme('blood-orange', #424851, #fff, #E76A68);
-@include generateTheme('blood-orange--rounded', #424851, #fff, #E76A68, #fff, 20px);
-@include generateTheme('dark-lime', #424851, #fff, #97D058);
-@include generateTheme('dark-lime--rounded', #424851, #fff, #97D058, #fff, 20px);
 @include generateTheme('royal', #FBC227, #232323, #726CEA, #fff);
-@include generateTheme('royal--rounded', #FBC227, #232323, #726CEA, #fff, 20px);
+
 
 .slideFromTop-enter, .slideFromTop-leave-to {
   transform: translate(0px, -12.500em);
